@@ -1,0 +1,64 @@
+main {
+    margin-top: 60px;
+}
+
+.about-section {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.about-article {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 60px;
+}
+
+.about-content {
+    flex: 0 0 60%;
+    padding-right: 30px;
+}
+
+/* .about-title {
+    flex: 0 0 30%;
+    position: sticky;
+    top: 100px;
+    align-self: center;
+} */
+
+.about-text {
+    font-family: 'Geomanist', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.11em;
+    color: #2B3657;
+    text-align: left;
+    margin: 0px;
+}
+
+.golden-texts {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 44px;
+    line-height: 100%;
+    letter-spacing: 0.11em;
+    text-align: right;
+    text-transform: uppercase;
+    color: #E8C889;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.golden span {
+    font-family: 'Geomanist', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.11em;
+    color: #E8C889;
+    margin-right: 5px;
+}

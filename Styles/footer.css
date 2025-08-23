@@ -1,0 +1,125 @@
+  /* Estilos base del footer */
+  footer {
+      background-color: #2B3657;
+      width: 100%;
+      min-height: 273px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 100px;
+      padding: 40px 20px;
+      box-sizing: border-box;
+  }
+
+  footer article {
+      display: flex;
+  }
+
+  /* Estilos para el article de info */
+  footer article:last-child {
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 30px;
+  }
+
+  .direccion {
+      width: 258px;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 500 !important;
+      font-size: 10.15px;
+      line-height: 100%;
+      color: #FFFFFF;
+      margin: 0;
+  }
+
+  .direccion span {
+      font-weight: 300 !important;
+  }
+
+  .links-container {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+  }
+
+  .links-container a {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      font-size: 10.15px;
+      line-height: 100%;
+      color: #FFFFFF;
+      text-decoration: none;
+      text-align: left;
+  }
+
+  /* Media queries para pantallas pequeñas */
+  @media screen and (max-width: 768px) {
+      footer {
+          flex-direction: column;
+          height: auto;
+          padding: 40px 20px;
+          gap: 40px;
+      }
+
+      .logo-container-two {
+          display: flex;
+          justify-content: center;
+          order: 1;
+      }
+
+      .logo-container-two svg {
+          width: 250px;
+          height: auto;
+      }
+
+      .info-container {
+          order: 2;
+          align-items: center !important;
+          text-align: center;
+          width: 100%;
+      }
+
+      .direccion {
+          width: 100%;
+          max-width: 300px;
+          text-align: center;
+          margin-bottom: 20px;
+      }
+
+      .links-container {
+          align-items: center;
+          width: 100%;
+      }
+
+      /* Reset de cualquier posicionamiento absoluto que pueda estar causando superposición */
+      footer article,
+      .logo-container-two,
+      .info-container,
+      .direccion,
+      .links-container {
+          position: static !important;
+          transform: none !important;
+      }
+  }
+
+  /* Para pantallas muy pequeñas (móviles) */
+  @media screen and (max-width: 480px) {
+      footer {
+          padding: 30px 15px;
+          gap: 30px;
+      }
+
+      .logo-container-two svg {
+          width: 200px;
+      }
+
+      .direccion {
+          font-size: 9px;
+          max-width: 250px;
+      }
+
+      .links-container a {
+          font-size: 9px;
+      }
+  }

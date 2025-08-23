@@ -1,0 +1,35 @@
+/* HERO con fondo */
+.hero {
+  background: url("../images/fondo-personas.png") no-repeat center center/cover;
+  height: 90vh; /* ocupa casi toda la pantalla */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+/* Contenedor para el h1 con dimensiones exactas */
+.hero-content h1 {
+  font-family: 'Helvetica', sans-serif; /* Fuente Helvetica */
+  font-weight: 700; /* Bold */
+  font-size: 400%; /* Tamaño de letra */
+  width: 914px; /* Ancho fijo */
+  height: 504px; /* Alto fijo */
+  margin: 0 auto 20px auto; /* Centrar horizontal y espacio abajo */
+  line-height: 1.1; /* Ajusta la altura de línea para encajar en 240px */
+  text-align: center; /* Centrar texto */
+}
+
+/* Texto secundario */
+.hero-content p {
+  font-family: 'Montserrat', sans-serif; /* Fuente Montserrat */
+  font-weight: 300; /* Light */
+  font-size: 36px; /* Tamaño de letra */
+  width: 1242px; /* Ancho fijo */
+  height: 44px; /* Alto fijo */
+  margin: 0 auto; /* Centrar horizontal */
+  line-height: 1.2; /* Ajustar altura de línea */
+  text-align: center; /* Centrar texto */
+}

@@ -1,0 +1,46 @@
+main {
+    margin-top: 60px;
+}
+
+.location-article {
+    display: flex;
+    align-items: flex-start; 
+    justify-content: space-between;
+    max-width: 900px; 
+    margin: 0 auto;
+    padding: 20px;
+    gap: 40px;
+}
+
+
+.map-container {
+    flex: 0 0 430px;
+}
+
+.google-map {
+    width: 430px;
+    height: 254px;
+    border: none;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.location-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.address-text {
+    font-family: 'Geomanist', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.11em;
+    color: #2B3657;
+    margin: 0;
+    text-align: left;
+}
+

@@ -1,0 +1,98 @@
+main {
+    margin-top: 60px;
+}
+
+.centered-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
+}
+
+.golden-texts {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 44px;
+    line-height: 100%;
+    letter-spacing: 11%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #E8C889;
+    margin: 0px;
+}
+
+.first-group-txt {
+    font-family: 'Geomanist', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 11%;
+    text-align: center;
+    color: #2B3657;
+    width: 800px;
+}
+
+/* Estilos para los artículos de servicios */
+.service-article {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+    gap: 40px;
+}
+
+.service-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.service-image {
+    flex: 0 0 40%;
+    text-align: center;
+}
+
+.service-list {
+    font-family: 'Geomanist', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    line-height: 14px;
+    letter-spacing: 0.11em;
+    color: #2B3657;
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+.service-list li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.service-list li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #E8C889;
+}
+
+.nested-list {
+    list-style-type: none;
+    padding-left: 20px;
+    margin-top: 5px;
+}
+
+.nested-list li:before {
+    content: "○";
+    color: #2B3657;
+}
+
+.button-link {
+    display: inline-block;
+    margin-top: 15px;
+}
