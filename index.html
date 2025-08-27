@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="Styles/general-config.css">
   <link rel="stylesheet" href="Styles/nav.css">
   <link rel="stylesheet" href="Styles/index-sty.css">
+  <link rel="stylesheet" href="footer.css">
 </head>
 <body>
 
@@ -21,13 +22,12 @@
         <li><a href="index.html" class="active">Home</a></li>
         <li><a href="quienessomos.html">Quienes Somos</a></li>
         <li><a href="servicios.html">Catálogo</a></li>
-        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="#galeria">Galería</a></li>
         <li><a href="#contacto">Contacto</a></li>
-        <li><a href="#">ES</a></li>
       </ul>
     </nav>
   </header>
-
+<main>
 <!-- HERO -->
 <section class="hero">
   <div class="hero-content">
@@ -38,14 +38,165 @@
   </div>
 </section>
 
+<!-- SECCIÓN VARIEDAD Y SERVICIOS -->
+<section class="variedad">
+  <div class="variedad-content">
+    <div class="variedad-texto">
+      <h2><span class="helvetica">Descubre</span> <span class="soulmaze">Nuestra</span> <span class="helvetica">Variedad</span></h2>
+      <p class="inter">
+        Descubre y conoce el nuevo concepto que tenemos para ti, ofrecemos servicios únicos en el mercado como son: Producción de eventos, Contratación de artistas, Sonido e iluminación, Diseño y escenografía, Producción audiovisual, Experiencias VIP, Servicios post-evento, etc.
+      </p>
+    </div>
 
-  <!-- AQUÍ VAN LAS SIGUIENTES SECCIONES
-  <main>
-    <section>
-      <h2></h2>
-      <p></p>
-    </section>
-  </main>
+    <div class="variedad-imagen">
+      <img src="images/musicCircle.svg" alt="Música">
+    </div>
+  </div>
 
- </body>
-</html> -->
+  <!-- Contenedor en dos columnas: recuadros izquierda, texto derecha -->
+  <div class="servicios-layout">
+    <!-- Columna izquierda con los recuadros 2x2 -->
+    <div class="servicios-grid">
+      <div class="servicio-card">
+        <img src="images/recuadroAudio.png" alt="Audio">
+      </div>
+      <div class="servicio-card">
+        <img src="images/recuadroLuces.png" alt="Luces">
+      </div>
+      <div class="servicio-card">
+        <img src="images/recuadroDj.png" alt="DJ">
+      </div>
+      <div class="servicio-card">
+        <img src="images/recuadroPaq.png" alt="Paquete">
+      </div>
+    </div>
+
+    <!-- Columna derecha con texto y botón -->
+    <div class="servicios-texto">
+      <h2><span class="helvetica">Nuestros</span> <span class="soulmaze">Servicios</span></h2>
+      <p class="inter">
+        Ofrecemos servicios integrales de producción audiovisual para eventos, incluyendo sistemas de sonido de alta calidad, iluminación profesional y DJ expertos. Desde pequeñas reuniones hasta grandes eventos, nos encargamos de crear ambientes inolvidables que cautivan a tu audiencia. Nuestro equipo experimentado garantiza una ejecución impecable desde la planificación hasta la ejecución, asegurando que cada detalle contribuya a una experiencia memorable.
+      </p>
+      <a href="#" class="btn-inter">Descubre más de nuestros paquetes</a>
+    </div>
+  </div>
+</section>
+
+
+<section id="galeria" class="galeria-section">
+  <div class="galeria-header">
+    <h2><span class="soulmaze">Galería</span></h2>
+
+    <!-- Filtros -->
+    <div class="galeria-filtros">
+      <button>Audio</button>
+      <button>Luces</button>
+      <button>DJ</button>
+      <button>Paquetes</button>
+    </div>
+  </div>
+  <!-- Galería -->
+  <div class="galeria-grid">
+    <!-- Item 1 -->
+    <div class="galeria-item">
+      <img src="images/evento1.jpg" alt="Evento 1">
+      <div class="galeria-buttons">
+        <button class="btn-play">▶ Reproducir</button>
+        <button class="btn-info">Conócelo</button>
+      </div>
+    </div>
+
+    <!-- Item 2 -->
+    <div class="galeria-item">
+      <img src="images/evento2.jpg" alt="Evento 2">
+      <div class="galeria-buttons">
+        <button class="btn-play">▶ Reproducir</button>
+        <button class="btn-info">Conócelo</button>
+      </div>
+    </div>
+
+    <!-- Item 3 -->
+    <div class="galeria-item">
+      <img src="images/evento3.jpg" alt="Evento 3">
+      <div class="galeria-buttons">
+        <button class="btn-play">▶ Reproducir</button>
+        <button class="btn-info">Conócelo</button>
+      </div>
+    </div>
+
+    <!-- Item 4 -->
+    <div class="galeria-item">
+      <img src="images/evento4.jpg" alt="Evento 4">
+      <div class="galeria-buttons">
+        <button class="btn-play">▶ Reproducir</button>
+        <button class="btn-info">Conócelo</button>
+      </div>
+    </div>
+
+    <!-- Item 5 -->
+    <div class="galeria-item">
+      <img src="images/evento5.jpg" alt="Evento 5">
+      <div class="galeria-buttons">
+        <button class="btn-play">▶ Reproducir</button>
+        <button class="btn-info">Conócelo</button>
+      </div>
+    </div>
+
+    <!-- Item 6 -->
+    <div class="galeria-item">
+      <img src="images/evento6.jpg" alt="Evento 6">
+      <div class="galeria-buttons">
+        <button class="btn-play">▶ Reproducir</button>
+        <button class="btn-info">Conócelo</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Botón general -->
+  <div class="galeria-vermas">
+    <button>Conoce toda nuestra Galería →</button>
+  </div>
+</section>
+<!-- SECCIÓN CONTACTO -->
+<section id="contacto" class="contacto-section">
+  <div class="contacto-container">
+    
+    <!-- Columna izquierda: Formulario -->
+    <div class="contacto-form">
+      <h2><span class="soulmaze">Déjanos conocerte</span></h2>
+      <p class="contacto-subtitulo">Estamos en contacto contigo</p>
+      
+      <form action="#" method="post">
+        <label for="nombre">Nombre*</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+        
+        <label for="email">Correo Electrónico*</label>
+        <input type="email" id="email" name="email" placeholder="Ingresa tu correo electronico" required>
+        
+        <label for="telefono">Número de teléfono*</label>
+        <div class="telefono-input">
+          <input type="tel" id="telefono" name="telefono" placeholder="0000000000" required>
+        </div>
+        
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje"></textarea>
+        
+        <button type="submit" class="btn-enviar">Enviar</button>
+      </form>
+    </div>
+    
+    <!-- Columna derecha: Imagen -->
+    <div class="contacto-imagen">
+      <img src="images/manoGotas.png" alt="Mano con gotas">
+    </div>
+  </div>
+</section>
+
+</main>
+
+
+
+
+
+</body>
+</html>

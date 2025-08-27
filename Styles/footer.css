@@ -1,125 +1,73 @@
-  /* Estilos base del footer */
-  footer {
-      background-color: #2B3657;
-      width: 100%;
-      min-height: 273px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 100px;
-      padding: 40px 20px;
-      box-sizing: border-box;
+/* FOOTER */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  color: white;
+  padding: 15px 5%; /* más compacto */
+  flex-wrap: wrap;
+  font-family: "Inter", sans-serif;
+  font-size: 14px; /* tamaño más adecuado */
+}
+
+/* Logo */
+.footer-logo img {
+  height: 45px; /* tamaño más pequeño */
+}
+
+/* Palabras centrales */
+.footer-links {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  gap: 25px; /* espacio entre palabras */
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #ccc;
+}
+
+/* Redes sociales derecha */
+.footer-social {
+  display: flex;
+  gap: 12px;
+}
+
+.footer-social img {
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.footer-social img:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px 10px;
+    gap: 15px;
   }
 
-  footer article {
-      display: flex;
+  .footer-links {
+    gap: 15px;
+    flex-wrap: wrap;
   }
 
-  /* Estilos para el article de info */
-  footer article:last-child {
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
-      gap: 30px;
+  .footer-social {
+    margin-top: 10px;
   }
-
-  .direccion {
-      width: 258px;
-      font-family: 'Poppins', sans-serif;
-      font-weight: 500 !important;
-      font-size: 10.15px;
-      line-height: 100%;
-      color: #FFFFFF;
-      margin: 0;
-  }
-
-  .direccion span {
-      font-weight: 300 !important;
-  }
-
-  .links-container {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-  }
-
-  .links-container a {
-      font-family: 'Poppins', sans-serif;
-      font-weight: 600;
-      font-size: 10.15px;
-      line-height: 100%;
-      color: #FFFFFF;
-      text-decoration: none;
-      text-align: left;
-  }
-
-  /* Media queries para pantallas pequeñas */
-  @media screen and (max-width: 768px) {
-      footer {
-          flex-direction: column;
-          height: auto;
-          padding: 40px 20px;
-          gap: 40px;
-      }
-
-      .logo-container-two {
-          display: flex;
-          justify-content: center;
-          order: 1;
-      }
-
-      .logo-container-two svg {
-          width: 250px;
-          height: auto;
-      }
-
-      .info-container {
-          order: 2;
-          align-items: center !important;
-          text-align: center;
-          width: 100%;
-      }
-
-      .direccion {
-          width: 100%;
-          max-width: 300px;
-          text-align: center;
-          margin-bottom: 20px;
-      }
-
-      .links-container {
-          align-items: center;
-          width: 100%;
-      }
-
-      /* Reset de cualquier posicionamiento absoluto que pueda estar causando superposición */
-      footer article,
-      .logo-container-two,
-      .info-container,
-      .direccion,
-      .links-container {
-          position: static !important;
-          transform: none !important;
-      }
-  }
-
-  /* Para pantallas muy pequeñas (móviles) */
-  @media screen and (max-width: 480px) {
-      footer {
-          padding: 30px 15px;
-          gap: 30px;
-      }
-
-      .logo-container-two svg {
-          width: 200px;
-      }
-
-      .direccion {
-          font-size: 9px;
-          max-width: 250px;
-      }
-
-      .links-container a {
-          font-size: 9px;
-      }
-  }
+}
