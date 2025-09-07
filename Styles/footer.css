@@ -1,73 +1,59 @@
-/* FOOTER */
 .footer {
+  background-color: #000; /* fondo negro */
+  color: white;
+  padding: 20px 40px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #000;
-  color: white;
-  padding: 15px 5%; /* más compacto */
-  flex-wrap: wrap;
-  font-family: "Inter", sans-serif;
-  font-size: 14px; /* tamaño más adecuado */
+  flex-wrap: wrap; /* para que no se desborde en pantallas pequeñas */
 }
 
-/* Logo */
 .footer-logo img {
-  height: 45px; /* tamaño más pequeño */
+  height: 60px;
 }
 
-/* Palabras centrales */
-.footer-links {
+.footer-menu {
+  list-style: none;
   display: flex;
-  justify-content: center;
-  flex: 1;
-  gap: 25px; /* espacio entre palabras */
+  gap: 40px;
+  padding: 0;
+  margin: 0;
 }
 
-.footer-links a {
+.footer-menu li a {
   color: white;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: bold;
+  font-size: 14px;
   transition: color 0.3s ease;
 }
 
-.footer-links a:hover {
+.footer-menu li a:hover {
   color: #ccc;
 }
 
-/* Redes sociales derecha */
-.footer-social {
+.footer-socials {
   display: flex;
-  gap: 12px;
+  gap: 20px;
 }
 
-.footer-social img {
-  height: 25px;
+.footer-socials img {
   width: 25px;
-  cursor: pointer;
+  height: 25px;
   transition: transform 0.3s ease;
 }
 
-.footer-social img:hover {
-  transform: scale(1.1);
+.footer-socials img:hover {
+  transform: scale(1.2);
 }
 
-/* Responsive */
-@media (max-width: 900px) {
-  .footer {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 15px 10px;
-    gap: 15px;
-  }
-
-  .footer-links {
-    gap: 15px;
-    flex-wrap: wrap;
-  }
-
-  .footer-social {
-    margin-top: 10px;
-  }
+.footer-copy {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 15px;
+  color: #bbb;
 }
