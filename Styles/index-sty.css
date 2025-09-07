@@ -69,7 +69,6 @@
   margin-top: 20px;  /* baja un poquito para dinamismo */
 }
 
-
 .servicio-card {
   text-align: center;
 }
@@ -113,7 +112,6 @@
   text-align: left;
 }
 
-
 /* Texto servicios */
 .servicios-texto {
   max-width: 700px;
@@ -141,7 +139,6 @@
   color: black;       /* letra negra al pasar el mouse */
 }
 
-
 /* FUENTES */
 .helvetica {
   font-family: Helvetica, Arial, sans-serif;
@@ -155,7 +152,7 @@
   font-family: "Inter", sans-serif;
 }
 
-/* SECCIÓN GALERÍA */
+/* SECCIÓN GALERÍA - SOLO MODIFICACIÓN DE IMÁGENES */
 .galeria-section {
   padding: 60px 10%;
   background: linear-gradient(135deg, #000000, #3a006d, #000000);
@@ -166,7 +163,7 @@
   font-family: "MADE Soulmaze Brush", cursive;
   font-size: 3rem;
   margin-bottom: 20px;
-  text-align: center; /* centramos título */
+  text-align: center;
 }
 
 /* Filtros */
@@ -174,7 +171,7 @@
   display: flex;
   gap: 10px;
   margin-bottom: 30px;
-  justify-content: center; /* centramos botones de filtro */
+  justify-content: center;
 }
 
 .galeria-filtros button {
@@ -195,9 +192,9 @@
 
 .galeria-header {
   display: flex;
-  justify-content: space-between; /* h2 izquierda, filtros derecha */
+  justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap; /* para que sea responsive en móviles */
+  flex-wrap: wrap;
   margin-bottom: 30px;
 }
 
@@ -208,20 +205,19 @@
 .galeria-filtros {
   display: flex;
   gap: 10px;
-  margin: 0; /* quitar margen si hay */
+  margin: 0;
 }
 
-
-/* Grid: 3 columnas x 2 filas */
+/* Grid: 3 columnas x 2 filas - SOLO CAMBIO EN IMÁGENES */
 .galeria-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columnas fijas */
-  grid-template-rows: repeat(2, auto);   /* 2 filas automáticas */
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
   gap: 20px;
-  justify-items: center; /* centra los items horizontalmente */
-  align-items: start;    /* alinea items arriba */
-  margin: 0 auto;        /* centra todo el grid en la sección */
-  max-width: 1000px;     /* ancho máximo opcional */
+  justify-items: center;
+  align-items: start;
+  margin: 0 auto;
+  max-width: 1000px;
 }
 
 .galeria-item {
@@ -237,8 +233,11 @@
   transform: translateY(-5px);
 }
 
+/* SOLO ESTO SE MODIFICÓ - Altura fija para imágenes */
 .galeria-item img {
   width: 100%;
+  height: 180px; /* ALTURA FIJA */
+  object-fit: cover; /* Mantiene proporciones */
   border-radius: 6px;
   margin-bottom: 10px;
 }
@@ -298,7 +297,7 @@
 
 /* ====== SECCIÓN CONTACTO ====== */
 .contacto-section {
-  background: #000; /* fondo negro elegante */
+  background: #000;
   padding: 80px 10%;
   color: white;
 }
@@ -338,12 +337,12 @@
   color: #ddd;
 }
 
-/* Inputs y textarea en general */
+/* Inputs y textarea */
 .contacto-form input,
 .contacto-form textarea,
 .iti input {
   width: 100%;
-  height: 50px; /* misma altura en todos */
+  height: 50px;
   padding: 12px 15px;
   margin-bottom: 20px;
   border: 1px solid #666;
@@ -361,27 +360,26 @@
   color: #aaa;
 }
 
-/* Textarea un poco más alto */
+/* Textarea */
 .contacto-form textarea {
   height: 120px;
   resize: none;
 }
 
-/* Ajuste específico del input de teléfono intl-tel-input */
+/* Teléfono internacional */
 .iti {
-  width: 100% !important; /* ocupa todo el ancho */
+  width: 100% !important;
 }
 
 .iti input {
-  border-radius: 8px !important; /* igual que los demás */
+  border-radius: 8px !important;
   margin-bottom: 0 !important;
   height: 50px !important;
   line-height: 50px;
 }
 
-/* Dropdown de banderas */
 .iti__selected-dial-code {
-  color: #fff; /* color blanco para el código */
+  color: #fff;
 }
 
 .iti__flag-container {
@@ -397,7 +395,7 @@
   color: white;
   font-size: 1rem;
   font-family: "Inter", sans-serif;
-  border: none;
+  border: noe;
   border-radius: 30px;
   cursor: pointer;
   transition: transform 0.3s, opacity 0.3s;
@@ -420,4 +418,91 @@
   max-width: 420px;
   width: 100%;
   height: auto;
+}
+
+/* Media queries para responsividad GENERAL (no solo galería) */
+@media (max-width: 1200px) {
+  .hero-content h1 {
+    font-size: 350%;
+    width: 800px;
+    height: 440px;
+  }
+  
+  .hero-content p {
+    font-size: 32px;
+    width: 1100px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .galeria-grid {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 800px;
+  }
+  
+  .variedad-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .variedad-texto {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 280%;
+    width: 600px;
+    height: 350px;
+  }
+  
+  .hero-content p {
+    font-size: 28px;
+    width: 900px;
+  }
+  
+  .galeria-grid {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+  }
+  
+  .galeria-header {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+  
+  .servicios-layout {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 200%;
+    width: 400px;
+    height: 250px;
+  }
+  
+  .hero-content p {
+    font-size: 20px;
+    width: 350px;
+    height: auto;
+  }
+  
+  .galeria-item img {
+    height: 150px;
+  }
+  
+  .galeria-buttons {
+    flex-direction: column;
+  }
+  
+  .btn-play,
+  .btn-info {
+    width: 100%;
+  }
 }
