@@ -315,18 +315,61 @@
   min-width: 320px;
 }
 
-.contacto-form h2 {
-  font-size: 2.5rem;
+/* Estilos para el título de contacto */
+.contacto-titulo {
+  font-family: "Montserrat", sans-serif;
+  font-size: 85px;
   font-weight: 700;
   margin-bottom: 10px;
   color: #fff;
+  line-height: 1.1;
 }
 
+/* Estilos para el subtítulo de contacto */
 .contacto-subtitulo {
   font-family: "MADE Soulmaze Brush", cursive;
-  font-size: 1.2rem;
+  font-size: 64px;
+  font-weight: 300;
   margin-bottom: 30px;
   color: #ccc;
+  line-height: 1.2;
+}
+
+/* Media queries para hacerlo responsive */
+@media (max-width: 1200px) {
+  .contacto-titulo {
+    font-size: 70px;
+  }
+  .contacto-subtitulo {
+    font-size: 52px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .contacto-titulo {
+    font-size: 60px;
+  }
+  .contacto-subtitulo {
+    font-size: 44px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contacto-titulo {
+    font-size: 48px;
+  }
+  .contacto-subtitulo {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contacto-titulo {
+    font-size: 36px;
+  }
+  .contacto-subtitulo {
+    font-size: 28px;
+  }
 }
 
 /* Etiquetas */
