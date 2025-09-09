@@ -1,27 +1,16 @@
-/* Fondo general de la sección */
+/* quienessomos-sty.css - CORREGIDO */
+/* Fondo movido al contenedor principal */
 .quienes-container {
     width: 100%;
     min-height: 100vh;
     background: linear-gradient(180deg, #2b0a3d, #12001d);
     display: flex;
-    flex-direction: column; /* Cambiado a columna */
-    justify-content: flex-start; /* Alineación al inicio */
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
     padding: 40px 20px;
-    gap: 30px; /* Espacio entre cards */
-}
-
-/* Eliminar barra blanca entre nav y body */
-body {
+    gap: 30px;
     margin: 0;
-    padding: 0;
-    background: linear-gradient(180deg, #2b0a3d, #12001d);
-}
-
-/* Asegurar que el header no tenga márgenes */
-header {
-    margin: 0;
-    padding: 0;
 }
 
 /* Tarjeta principal */
@@ -34,7 +23,6 @@ header {
     align-items: center;
     max-width: 1406px;
     width: 100%;
-    height: 579.3px;
     min-height: 579.3px;
     gap: 20px;
     position: relative;
@@ -44,7 +32,6 @@ header {
     box-sizing: border-box;
 }
 
-/* Resto del CSS se mantiene igual... */
 /* Caja del logo */
 .logo-box {
     flex: 1;
@@ -55,12 +42,13 @@ header {
 .logo-box img {
     width: 483.9px;
     height: auto;
+    max-width: 100%;
 }
 
 /* Texto - CON MARGEN DERECHO PARA LOS ICONOS */
 .texto-box {
     flex: 2;
-    margin-right: 120px; /* Espacio para los iconos */
+    margin-right: 120px;
 }
 
 .texto-box h4 {
@@ -113,7 +101,7 @@ header {
     }
     
     .texto-box {
-        margin-right: 100px; /* Ajuste para pantallas medianas */
+        margin-right: 100px;
     }
     
     .icons-box {
@@ -126,7 +114,7 @@ header {
 
 @media (max-width: 1024px) {
     .texto-box {
-        margin-right: 0; /* Quitar margen en tablets */
+        margin-right: 0;
     }
     
     .icons-box {

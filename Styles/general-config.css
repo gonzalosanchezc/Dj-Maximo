@@ -96,3 +96,12 @@ main {
 footer {
     max-width: 100% !important;
 }
+
+/* Asegurar que la fuente y el box-sizing se apliquen a todo el navbar */
+.navbar, 
+.navbar *,
+.nav-links,
+.nav-links * {
+    font-family: 'Montserrat', sans-serif !important; 
+    box-sizing: border-box !important;
+}
